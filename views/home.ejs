@@ -3,13 +3,36 @@
 
 <head>
     <title>Home</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css"/>
 </head>
 
-<body>
-    <p>Welcome to
-        <%= message %>
-    </p>
+<body >
+
+    <p>WELCOME TO REAL ESTATE COMPARATOR (for le bon coin) <br />
+    Please enter a URL "le bon coin" (push two time button "ok") 
+        
+    
+    <form action="/" method="GET">
+        <input type="text" name="urlLBC" />
+        <button type="submit">
+            OK
+        </button>
+         
+
+    </form>
+    
+    url of the offer that we are comparing:   <%= message %> <br />
+      
+        
+        Price  : <%= RealEstateAdPrice %> € <br />
+        Surface  : <%=RealEstateAdSurface %> m2 <br />
+        Price by square meter : <%=RealEstateAdPricePerM2 %> €  <br />
+        Type : <%=RealEstateAdType %>  <br />
+        City and postal code : <%=RealEstateAdCity %>  <br />
+        Average price : <%= message1 %> <br />
+        Comparateur : <%= message2 %>
+      
+    </p>  
 </body>
 
 </html>
